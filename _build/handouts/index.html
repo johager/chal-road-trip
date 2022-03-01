@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Road Trip Time | Devmountain Foundations</title>
+
+      <link
+        href="_static/pygments.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link href="_static/devmountain.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+          <link rel="stylesheet" type="text/css" href="_static/devmountain.css" />
+          <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+          <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+
+      <script src="_static/pdfobject.min.js"></script>
+      
+  </head>
+  <body>
+      <div id="handouts-container">
+        <header id="page-header">
+            <p id="project-title">Devmountain Foundations</p>
+            <p id="page-title">Road Trip Time</p>
+              <p id="backlink">
+                <a href="/"> &laquo; Back to Homepage </a>
+              </p>
+        </header>
+
+        <nav id="page-toc"><ul>
+<li><a class="reference internal" href="#">Road Trip Time</a></li>
+</ul>
+</nav>
+
+        <main id="page-content">
+            <section class="section" id="road-trip-time">
+<h1>Road Trip Time</h1>
+<dl class="field-list simple">
+<dt class="field-odd">Difficulty</dt>
+<dd class="field-odd"><p>Harder</p>
+</dd>
+<dt class="field-even">Concepts</dt>
+<dd class="field-even"><p>Math, Higher Order Functions</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>You are planning a road trip (in a time before Google Maps) and want to know how long each segment of the trip is going to be. Given an array of objects like this:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="sb">`Jake&#39;s Great Shakes`</span><span class="p">,</span>
+    <span class="nx">speedLimits</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nx">distance</span><span class="o">:</span> <span class="mf">100</span><span class="p">,</span>
+            <span class="nx">speedLimit</span><span class="o">:</span> <span class="mf">75</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nx">distance</span><span class="o">:</span> <span class="mf">84</span><span class="p">,</span>
+            <span class="nx">speedLimit</span><span class="o">:</span> <span class="mf">70</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nx">distance</span><span class="o">:</span> <span class="mf">20</span><span class="p">,</span>
+            <span class="nx">speedLimit</span><span class="o">:</span> <span class="mf">75</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nx">traffic</span><span class="o">:</span> <span class="mf">30</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Update the given function so that the <code class="docutils literal notranslate"><span class="pre">segmentTimes</span></code> array in the <code class="docutils literal notranslate"><span class="pre">result</span></code> object contains the times for each segment of the trip in hours. You can round the times to whole numbers. Also update the <code class="docutils literal notranslate"><span class="pre">totalTime</span></code> property to be the total time of the trip.</p>
+<p>Additionally, because you like data, you want to know what the average speed limit for each segment of the trip of is.</p>
+<p>Since you are traveling different distances at each speed, you’ll need to weight the averages. For example, given a trip segment where you travel 10 miles at 50 MPH and for 20 miles at 35 MPH, the average weighted speed limit would be 39.9. If you just added 50 and 35 and divided by 2 for a typical average, you would get 42.5. The weighted average is lower since you traveled a longer distance at the lower speed.</p>
+<p>As you find these weighted averages, add them into the <code class="docutils literal notranslate"><span class="pre">avgSpeedLimits</span></code> array in the <code class="docutils literal notranslate"><span class="pre">result</span></code> object.</p>
+<p>Return the <code class="docutils literal notranslate"><span class="pre">result</span></code> object from the function.</p>
+<p><em>Hint</em>: You can use the <code class="docutils literal notranslate"><span class="pre">reduce</span></code> method.</p>
+</section>
+
+        </main>
+
+        <footer id="page-footer">
+            <p>&copy; 2021 Devmountain</p>
+        </footer>
+      </div>
+
+      <script src="_static/main.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+  </body>
+</html>
